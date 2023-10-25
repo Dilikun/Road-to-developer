@@ -20,7 +20,7 @@ class Calculator:
         else:
             return 'Ошибка: деление на ноль'
 
-
+# Получает данные от пользователя
 def get_user_input(message):
     while True:
         try:
@@ -29,7 +29,7 @@ def get_user_input(message):
         except ValueError:
             print('Не удалось распознать число. Попробуйте снова.')
 
-
+# Основная функция
 def main():
     calc = Calculator()
 
