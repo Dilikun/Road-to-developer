@@ -6,8 +6,8 @@ def get_user_birthday():
     date_str = input('Enter your birth date in DD/MM/YYYY: ')
     try:
         birthday = datetime.strptime(date_str, '%d/%m/%Y')
-    except TypeError:
-        birthday = datetime.datetime(*(time.strptime(date_str, '%d/%m/%Y')[0:6]))
+    except ValueError:
+        print("Incorrect format. Please enter the date in the format DD/MM/YYYY.")
     return birthday
 
 
